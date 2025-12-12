@@ -227,6 +227,17 @@ Seu funcionamento é simples e direto:
 
 * Atualiza o status dos pedidos para ENTREGUE.
 
+# Uso de IA no projeto 
+
+Neste projeto, a Inteligência Artificial (IA) foi utilizada como aliada no desenvolvimento e na documentação. O objetivo principal foi otimizar a lógica de alocação e auxiliar na criação de testes unitários.
+
+* Geração de testes unitários: A IA ajudou a estruturar os testes para DroneService, OrderService e DeliveryService.
+* Algoritmo heurístico para alocação de pedidos: A IA ajudou a estruturar a lógica que prioriza pedidos de alta prioridade, distribuindo cargas e autonomia de drones de forma eficiente.
+* SimulationEngine: Com base nas regras do projeto, a IA sugeriu como modelar o motor de simulação que recebe pedidos e drones, calcula rotas e simula a entrega, garantindo que a lógica de despacho funcione corretamente.
+
+
+
+
 
 
 
