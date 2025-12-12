@@ -51,7 +51,7 @@ public class SimulationEngine {
         double consumption = routeKm * (1.0 + weightFactorForBattery * totalWeight);
 
 
-        // tempo total de voo (horas) -> ms reais ajustados pelo timeScale
+        // tempo total de voo (horas)
         double timeHours = routeKm / speedKmPerHour;
         long totalFlightMs = (long) ((timeHours * 3600_000) / timeScale);
 
