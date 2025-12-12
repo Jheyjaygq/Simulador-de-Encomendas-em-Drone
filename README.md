@@ -40,7 +40,7 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
     Abra seu terminal ou prompt de comando e execute o comando abaixo para baixar o código-fonte:
 
     ```bash
-    git clone https:github.com/Jheyjaygq/Simulador-de-Encomendas-em-Drone
+    git clone [https:github.com/Jheyjaygq/Simulador-de-Encomendas-em-Drone](https://github.com/Jheyjaygq/Simulador-de-Encomendas-em-Drone)
     ```
 
 2.  **Navegar para o diretório do projeto:**
