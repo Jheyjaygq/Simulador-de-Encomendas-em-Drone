@@ -5,7 +5,7 @@ API REST desenvolvida em **Spring Boot** para gerenciar a logística de entrega 
 
 ## Sobre o Projeto
 
-1.  **Drones** possuem especificações técnicas (capacidade de carga, autonomia, velocidade e bateria).
+1.  **Drones** possuem especificações técnicas (capacidade de carga, autonomia e velocidade ).
 2.  **Pedidos** possuem peso, prioridade e coordenadas cartesianas (X, Y) simulando um mapa.
 3.  O sistema aloca automaticamente os pedidos aos drones disponíveis usando uma lógica de otimização.
 4.  Uma vez despachado, o drone entra em um ciclo de simulação de estados (`IDLE` ➝ `CARREGANDO` ➝ `EM_VOO` ➝ `ENTREGANDO` ➝ `RETORNANDO`).
@@ -18,6 +18,7 @@ API REST desenvolvida em **Spring Boot** para gerenciar a logística de entrega 
   * **Framework Principal:** Spring Boot 4.0.0
   * **Banco de Dados:** H2 Database
   * **Build:** Apache Maven
+  * **Testes:** JUnit e Mockito  
 
 -----
 
@@ -212,4 +213,20 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
 ]
 ````
 -----
+
+# SimulationEngine — Como funciona
+
+O SimulationEngine é o componente responsável por simular a entrega real feita pelo drone após os pedidos terem sido alocados pelo DeliveryService.
+Seu funcionamento é simples e direto:
+
+* Recebe o drone e os pedidos já alocados.
+
+* Calcula a rota com base nas coordenadas de cada entrega.
+
+* Simula o deslocamento do drone, atualizando seu estado (IDLE → DELIVERING → RETURNING → IDLE).
+
+* Atualiza o status dos pedidos para ENTREGUE.
+
+
+
 
