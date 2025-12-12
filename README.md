@@ -63,13 +63,6 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
 5.  **Acesse a API:**
     * URL Base: `http://localhost:8080`
 
-6.  **Acesse o Console do Banco (H2):**
-    * URL: `http://localhost:8080/h2-console`
-    * **JDBC URL:** `jdbc:h2:mem:dronedb`
-    * **User:** `sa`
-    * **Password:** `password`
-
-
 -----
 
 ##  Documentação da API (Endpoints)
@@ -220,14 +213,3 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
 ````
 -----
 
-## Estrutura de Pastas
-
-com.example.Simulador...
-├── Controller       # Camada REST (Endpoints)
-├── Dto              # Objetos de Transferência (DTOs)
-├── Entities         # Entidades JPA (Drone, Order, Enums)
-├── Repositories     # Acesso a Dados (Interfaces JPA)
-└── Service          # Regras de Negócio
-
------
-  
