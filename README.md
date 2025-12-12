@@ -9,7 +9,7 @@ API REST desenvolvida em **Spring Boot** para gerenciar a logística de entrega 
 2.  **Pedidos** possuem peso, prioridade e coordenadas cartesianas (X, Y) simulando um mapa.
 3.  O sistema aloca automaticamente os pedidos aos drones disponíveis usando uma lógica de otimização.
 4.  Uma vez despachado, o drone entra em um ciclo de simulação de estados (`IDLE` ➝ `CARREGANDO` ➝ `EM_VOO` ➝ `ENTREGANDO` ➝ `RETORNANDO`).
-5.  
+   
 ---
 
 ## Tecnologias Utilizadas
@@ -86,6 +86,7 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
   "batteryPercent": 100.0,
   "speedKmPerHour": 40.0
 }
+```
 
 **Listar Drones**
 
@@ -110,6 +111,7 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
         "droneState": "IDLE"
     }
 ]
+```
 
 
 **Cadastrar um Pedido**
@@ -123,6 +125,8 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
     "weightKg": 34,
     "priority": "BAIXA"
 }
+
+```
 **Listar Pedidos**
 
 `GET /api/pedidos`
@@ -157,6 +161,7 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
         "dateCreation": "2025-12-12T09:10:16.512368"
     }
 ]
+```
 
 **Disparar Entregas (Otimização)**
 
@@ -212,6 +217,7 @@ Para compilar e executar este projeto, você precisará ter os seguintes softwar
         ]
     }
 ]
+````
 -----
 
 ## Estrutura de Pastas
