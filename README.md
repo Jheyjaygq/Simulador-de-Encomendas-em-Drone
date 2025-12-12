@@ -1,7 +1,7 @@
 
 # Simulador de Encomendas com Drones 
 
-API REST desenvolvida em **Spring Boot** para gerenciar a logística de entrega de encomendas via drones, que permite o gerenciamento (Criar e ler) de Drones e Pedidos. 
+API REST desenvolvida em **Spring Boot** para gerenciar a logística de entrega de encomendas via drones, permitindo o gerenciamento (Criar e ler) de Drones e Pedidos, juntamente com a otimizização das entregas 
 
 ## Sobre o Projeto
 
